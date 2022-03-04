@@ -7,7 +7,10 @@ print("Hi, my name is ", user_name, ", I am ", user_age, " years old.")
 name5 = (user_name + '') * 5
 print(name5)
 
-# user_name = input("Hi! What's your name?")
+user_name = input("Hi! What's your name?")
+if " " in user_name:
+    raise Exception("Please, enter your name without spaces.")
+
 # user_age = input("And now, what's your age?")
 try:
     user_age = int(user_age)
